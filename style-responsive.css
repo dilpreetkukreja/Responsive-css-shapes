@@ -1,0 +1,213 @@
+body{
+    margin: 1.875rem;
+    text-align: justify;
+    box-sizing: border-box;
+}
+    
+h1{
+    /* text-align: center; */
+}
+h2{
+    text-decoration: underline;
+}
+p{
+    font-size: 0.875rem;
+}
+img{
+    width: 50%;
+}
+.clearfix::after{
+        content: "";
+        clear: both;
+        display: table;
+}
+.polygon, .eclipse, .circle, .flow-left{
+    width: 50%;
+    float: left;
+    shape-margin: 0.5rem;
+    margin: 0.5rem;
+}
+.flow-right{
+    width: 50%;
+    float: right;
+    shape-margin: 0.5rem;
+    margin: 0.5rem;
+}
+.polygon{
+    
+    shape-outside: polygon(0.6% 23.65%, 33.45% 14.1%, 52.7% 12.25%, 89.45% 14.55%, 100% 25.9%, 99.1% 53.65%, 95.8% 74.1%, 58.75% 87.25%, 22% 87.25%, 0% 100%);
+    clip-path: polygon(0.6% 23.65%, 33.45% 14.1%, 52.7% 12.25%, 89.45% 14.55%, 100% 25.9%, 99.1% 53.65%, 95.8% 74.1%, 58.75% 87.25%, 22% 87.25%, 0% 100%);
+}
+
+.eclipse{
+    shape-outside: ellipse(44.85% 43.7% at 48.3% 49.7%);
+    clip-path: ellipse(44.85% 43.7% at 48.3% 49.7%);
+}
+
+.circle{
+    shape-outside: circle(51% at 50.55% 56.55%);
+}
+.flow-left{
+    width:30%;
+    shape-outside: ellipse(50% 50.2% at 50% 49.9%);
+}
+.flow-right{
+    width:30%;
+    shape-outside: ellipse(50% 50.2% at 50% 49.9%);
+}
+.img-v-shape{
+    text-align: center;
+}
+
+@media screen and (max-width:767px){
+    .triangle-text-container{
+        height: 90vh;
+    }
+}
+@media screen and (min-width:768px){
+    .triangle-text-container{
+        height: 30vh;
+    }
+}
+.left-v-shape-triangle{
+    float: left;
+    width: 15%;
+    height: 100%;
+
+    shape-outside: polygon(0% 0%, 17.65% 17.3%, 100% 100%, 0% 100%);
+
+}
+.right-v-shape-triangle{
+    float: right;
+    width: 15%;
+    height: 100%;
+    shape-outside: polygon(91% 10.85%, 100% 0%, 100% 100%, 0% 100%);
+}
+.z-shape-container{
+  
+}
+
+.img-z-shape{
+    text-align:center;
+}
+.triangle-text-container-z-shape{
+    float: left;
+    width: 70%;
+    margin-right: 10px;
+   
+}
+.triangle-text-container-z-shape p{
+    /* margin-top:0; */
+}
+table {
+    border-collapse: collapse;
+
+    font-size: 0.8rem;
+    /* border: 1px solid red; */
+}
+  
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+@media screen and (max-width:767px){
+    .triangle-text-container-z-shape{
+        height: 90vh;
+    }
+}
+@media screen and (min-width:768px){
+    .triangle-text-container-z-shape{
+        height: 30vh;
+    }
+}
+
+.left-z-shape-triangle{
+
+    float: left;
+    width: 15%;
+    height: 100%;
+    shape-outside: polygon(0% 0%, 18.55% 14.35%, 100% 100%, 0% 100%);
+
+}
+.right-z-shape-triangle{
+
+
+    float: right;
+    width: 15%;
+    height: 100%;
+    shape-outside: polygon(0% 0%, 100% 0%, 100% 100%, 84.3% 84.35%);
+   
+
+}
+.rotated-left{
+    transform: rotate(10deg);
+    margin: 1rem;
+    width: 50%;
+    float: left;
+    shape-outside: polygon(0% 0%, 97.55% 28.55%, 101.1% 35.7%, 99.2% 72.2%, 92.6% 86.9%, 0% 100%);
+    
+}
+.rotated-container{
+    transform: rotate(-10deg);
+    width: 70%;
+    margin: 6rem auto 3rem auto;
+
+}
+.curve-container{
+    width: 60%;
+    margin: auto;
+    position: relative;
+}
+.rotated-heading{
+    background: #eee;
+    /* width: 80%; */
+
+}
+.rotated-content{
+    width: 50%;
+    text-align: left;
+}
+.rotated-content img{
+    width: 50%;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 20rem;
+    width: 15rem;
+}
+@media screen and (max-width:769px){
+    .curve-container{
+        width: 100%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:414px){
+    .curve{
+        float: none;
+       
+    }
+}
+.curve{
+    text-align: justify;
+    width: 100%;
+    float: left;
+    margin-right: 0.5rem;
+    
+}
+@media screen and (max-width: 415px){
+    .curve{
+        display: none;
+
+    }
+    .rotated-content{
+        width: 100%;
+    }
+    .rotated-content img{
+        position:static;
+    }
+}
+@media screen and (min-width: 415px){
+
+    .curve{
+    shape-outside: polygon(0% 0%, 6.5% 0.7%, 8.2% 13.8%, 13.55% 37.95%, 21.5% 58.6%, 34.3% 77.95%, 48.55% 87.6%, 64% 93.1%, 84.8% 87.6%, 93.5% 80.7%, 100.25% 75.85%, 100% 100%, 0% 100%);
+}
